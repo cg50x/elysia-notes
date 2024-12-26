@@ -1,17 +1,19 @@
 {
-  "name": "hi-elysia",
-  "version": "1.0.50",
+  "name": "notes-app-monorepo",
+  "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "@elysiajs/opentelemetry": "^1.2.0",
-    "@elysiajs/swagger": "^1.2.0",
-    "elysia": "latest"
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "turbo": "^2.3.3"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "workspaces": [
+    "apps/*"
+  ],
+  "private": true,
+  "packageManager": "bun@1.1.29"
 }

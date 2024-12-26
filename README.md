@@ -1,15 +1,20 @@
-# Elysia with Bun runtime
+# Notes App Monorepo
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
-```bash
-bun create elysia ./elysia-example
-```
+This is a monorepo for a notes app. The backend is built with Bun and Elysia, and is based on the Elysia tutorial.
+
+**Future plans:**
+
+- Vite React frontend
+- React Native app
+- React Ink app
+- SQLite database w/ Drizzle ORM
 
 ## Development
+
 To start the development server run:
+
 ```bash
 bun run dev
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+Open http://localhost:3000/swagger with your browser to see the OpenAPI documentation.
